@@ -24,15 +24,16 @@ class Main():
 
 	tempCodeRunnerFile.clear()
 
-	def __init__(self, admin1 = 0, admin2 = 0, name:str = input("Enter your name:")):
+	def __init__(self, name:str = input("Enter your name:")):
 		self.name = name
 		self.time = time.strftime("%d %h %Y %H:%S:%M")
-		self.admin1 = 2302
-		self.admin2 = 2303
 
 	def start(self):
 
 		tempCodeRunnerFile.clear()
+
+		if self.admin1 != 0 or self.admin2 != 0:
+			self.admin()
 
 		print(f"Welcome to our Library, {self.name}\t\t\t\t\t\t{self.time}\n")
 
@@ -87,11 +88,5 @@ class Main():
 				print(f"{r_book} was never borrowed from us!! Exitting")
 			time.sleep(1.2)
 			self.start()
-
-	def admin(self):
-		for key, values in self.access.items():
-			print(f"{key}. {values}")
-		
-
 
 m = Main().start()
