@@ -16,13 +16,13 @@ class Main():
 		self.cs = 0
 
 	def start(self):
-		os.system("cls")
+		os.system("clear")
 		print("Welcome to the game. Computer has made it's choice.")
 		self.wc()
 
 	def wc(self):
 
-		os.system("cls")
+		os.system("clear")
 
 		if self.tries != 0:
 			pass

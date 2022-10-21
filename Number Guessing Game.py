@@ -13,13 +13,13 @@ class Main():
 
 	def start(self):
 		print("Hello")
-		# os.system("cls")
+		# os.system("clear")
 		print("Welcome to the game! Computer has guessed it's number\nGood Luck guessing it")
 		self.wc()
 
 	def wc(self):
 
-		os.system("cls")
+		os.system("clear")
 
 		if self.tries != 0:
 			pass
